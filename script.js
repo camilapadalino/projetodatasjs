@@ -1,3 +1,4 @@
+/*
 // RETORNA A DATA
 
 let data = new Date ()
@@ -27,3 +28,28 @@ document.write("<br><br>")
 hour.setHours(hour.getHours() + 2);
 document.write(hour.getHours());
 document.write("<br><br>")
+
+//Minutos
+let minutes = new Date ()
+document.write(minutes.getMinutes());
+document.write("<br><br>")
+
+//Segundos
+let seconds = new Date ()
+document.write(seconds.getSeconds());
+document.write("<br><br>")
+
+*/
+
+// Retorna a Data Padrão Americano
+msg = document.getElementById('msgData')
+let data1 = new Date ()
+//document.write(data1. toDateString());
+//document.write("<br><br>")
+msg.innerHTML += `<p>${data1}</p>`
+
+//tempo
+function BemVindo(){
+    alert("Olá,Dev Tudo Bem?")
+}
+setTimeout(BemVindo,1000)
